@@ -1,15 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Rubik } from '@next/font/google';
+
+
 import "./globals.css";
 import Header from "@/components/Header";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+
+const rubik = Rubik({
+  subsets: ['latin'], // Choose subsets as needed
+  weight: ['400', '500', '700'], // Specify font weights
+  display: 'swap', // Improve loading performance
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "DentaLink",
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${rubik.variable} ${rubik.variable} antialiased`}
       >
         <Header/>
           {children}
