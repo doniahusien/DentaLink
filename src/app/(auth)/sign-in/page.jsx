@@ -8,7 +8,7 @@ const signinPage = () => {
   return (
     <div className="flex justify-center items-center w-full h-screen ">
       <div
-        className=" bg-orange-400 flex w-[900px] h-[550px] shadow-lg border rounded-lg overflow-hidden"
+        className="flex w-[900px] h-[550px] shadow-lg border rounded-lg overflow-hidden"
       >
         {/* Left Image Section */}
         <div className="w-1/2 bg-primary px-24 flex justify-center items-center">
