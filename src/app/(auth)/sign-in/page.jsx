@@ -6,7 +6,7 @@ import LoginForm from '@/components/auth/LoginForm';
 
 const signinPage = () => {
   return (
-    <div className=" mt-20 flex justify-center items-center w-full h-screen ">
+    <div className=" mt-14 flex justify-center items-center w-full h-screen ">
       <div
         className="flex w-[900px] h-[550px] shadow-lg border rounded-lg overflow-hidden"
       >
