@@ -6,7 +6,7 @@ import AuthCard from '@/components/auth/AuthCard';
 const signupPage = () => {
   return (
     <>
-         <AuthCard img={signupImg} formAuth='signup'/>
+      <AuthCard img={signupImg} formAuth='signup' />
     </>
   )
 }
