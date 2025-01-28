@@ -1,15 +1,11 @@
-import { Rubik } from '@next/font/google';
-
-
 import "./globals.css";
 import Header from "@/components/Header";
 
-
+/*
 const rubik = Rubik({
   subsets: ['latin'], // Choose subsets as needed
   weight: ['400', '500', '700'], // Specify font weights
-  display: 'swap', // Improve loading performance
-});
+});*/
 
 
 export const metadata = {
@@ -20,12 +16,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${rubik.variable} antialiased`}
-      >
-        <Header/>
-          {children}
-         
+
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased font-rubik">
+        <Header />
+        {children}
       </body>
     </html>
   );

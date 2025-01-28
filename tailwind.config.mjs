@@ -7,10 +7,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"], // Custom font family
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: '#247CFF',
+        primary: "#247CFF",
       },
     },
   },
