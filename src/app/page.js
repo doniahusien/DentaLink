@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import '@fontsource/rubik/400.css'; // Regular
+
 
 export default function Home() {
   return (

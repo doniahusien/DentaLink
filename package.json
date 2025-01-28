@@ -12,7 +12,7 @@
     "@fontsource/rubik": "^5.1.1",
     "@next/font": "^14.2.15",
     "@reduxjs/toolkit": "^2.5.1",
-    "next": "15.1.6",
+    "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0"

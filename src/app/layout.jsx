@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${rubik.variable} ${rubik.variable} antialiased`}
+        className={`${rubik.variable} antialiased`}
       >
         <Header/>
           {children}
