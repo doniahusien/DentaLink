@@ -18,7 +18,7 @@ const Header = () => {
     
     return (
         <>
-            <div className='flex flex-wrap flex-row justify-around items-center  p-6  md:p-8 bg-transparent fixed top-0 left-0 z-20 w-full'>
+            <div className='flex flex-wrap flex-row justify-around items-center  p-6  md:p-8 bg-transparent absolute top-0 left-0 z-10 w-full'>
                 <div className=''>
                     <Image src={logo} alt="logo" width={240} height={100}/>
                 </div>
