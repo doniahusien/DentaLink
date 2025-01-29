@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Footer from "@/components/Footer";
 /*
 const rubik = Rubik({
   subsets: ['latin'], // Choose subsets as needed
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased font-rubik">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
