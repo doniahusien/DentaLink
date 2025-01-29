@@ -5,7 +5,7 @@ const patientsData = [
     patients: [
       { 
         id: 1, 
-        name: "Ahmed Ali", 
+        name: "Ahmed Abdelfattah", 
         doctor: "Dr. Shruti Kedia", 
         location: "Mansoura", 
         image:img 
