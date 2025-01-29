@@ -18,12 +18,14 @@ const ProductCard = ({ product }) => {
       <div className="flex flex-col text-left w-full gap-5">
         <div className='flex flex-row justify-around'>
           <h4 className="font-semibold ">{product.name}</h4>
-          <Image src={fav} alt={product.name } width={20} height={20} />
+          <Image src={fav} alt={product.name} width={20} height={20} />
         </div>
         <p className="pl-5">{product.price}</p>
-       
+        <div className='flex justify-center items-center'>
+          <Button title='buy' link='/buy' color="white" />
+        </div>
       </div>
-       <Button title='buy' link='/buy' color="white"/>
+
     </div>
   );
 };

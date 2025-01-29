@@ -16,7 +16,7 @@ const AuthCard = ({img,formType}) => {
                 {/* Right Form Section */}
                 <div className="w-1/2 flex justify-center items-center ">
                     {
-                        formType=='login'? (<LoginForm/>):(<SignupForm/>)
+                        formType=='signup'? (<SignupForm/>): (<LoginForm/>)
                     }
                 </div>
             </div>
