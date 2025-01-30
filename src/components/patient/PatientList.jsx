@@ -8,7 +8,6 @@ const PatientList = ({patients}) => {
                     {patients.map((patient, i) => (
                         
                             <PatientCard patient={patient} key={i} />
-                
                     ))}
           
             </div>
