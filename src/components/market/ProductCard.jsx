@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Button from '../ui/Button/Button';
-import fav from '../../../public/images/icons/fav.svg'
+import favFilled from '../../../public/images/icons/fav.svg'
+import fav from '../../../public/images/icons/favheart.svg'
 const ProductCard = ({ product }) => {
+  const [isFavorite, setIsFavorite] = useState(false);
+  const handleFavoriteClick = () => {
+    setIsFavorite((prev) => !prev);
+  };
   return (
     <div className="card flex flex-col border border-primary gap-5 flex-center items-center shadow-lg rounded-lg py-4 w-60 ">
       <div >
@@ -18,8 +23,14 @@ const ProductCard = ({ product }) => {
       <div className="flex flex-col text-left w-full gap-5">
         <div className='flex flex-row justify-around'>
           <h4 className="font-semibold ">{product.name}</h4>
-          <Image src={fav} alt={product.name} width={20} height={20} />
-        </div>
+          <button onClick={handleFavoriteClick} className="focus:outline-none">
+            <Image
+              src={isFavorite ? favFilled : fav}
+              alt={isFavorite ? 'Favorited' : 'Not Favorited'}
+              width={30}
+              height={30}
+            />
+          </button>        </div>
         <p className="pl-5">{product.price}</p>
         <div className='flex justify-center items-center'>
           <Button title='buy' link='/buy' color="white" />
