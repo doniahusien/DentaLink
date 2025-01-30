@@ -18,18 +18,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body className="antialiased font-rubik min-h-screen flex flex-col">
+      {/* Header */}
+      <Header />
 
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="antialiased font-rubik">
-        <Header />
+      {/* Main Content */}
+      <main className="flex-grow">
         {children}
-        <Footer />
-      </body>
-    </html>
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </body>
+  </html>
   );
 }
